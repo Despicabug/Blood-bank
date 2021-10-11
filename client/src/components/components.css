@@ -1,0 +1,372 @@
+.grow:hover {
+    animation-name: grow;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+    100% {
+        transform: scale(0.9);
+        background-color: rgb(180, 231, 231);
+    }
+}
+
+.donorForm {
+    width: '500px';
+    height: '100%';
+    margin: 'auto';
+    padding: '4em';
+}
+
+.navBtn:hover {
+    animation-name: btn-hover;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+}
+
+@keyframes btn-hover {
+    100% {
+        transform: scale(1.3);
+        background-color: rgb(184, 4, 4);
+        border-radius: 2px;
+        margin: 0px 10px;
+    }
+}
+
+.loginBtn{
+    margin-right:3px;
+}
+
+.loginBtn:hover {
+    animation-name: login-btn-hover;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+}
+
+@keyframes login-btn-hover {
+    100% {
+        transform: scale(1.2);
+        background-color: rgb(184, 4, 4);
+        margin: 0px 10px;
+    }
+}
+
+.logoutBtn {
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.logoutBtn:hover {
+    animation-name: logout-btn-hover;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+
+@keyframes logout-btn-hover {
+    100% {
+        transform: scale(1.1);
+        background-color: rgb(65, 68, 67);
+        margin: 0px 10px;
+        border: 2px solid white;
+    }
+}
+
+.positionContainer {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+
+.donorContainer {
+
+    width: 400px;
+    height: 700px;
+    display: flex;
+    justify-content: centers;
+}
+
+.donorCard {
+    width: 100%;
+    height: 100%;
+    padding: 20px 50px;
+    background: #fc00ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00dbde, #fc00ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #00dbde, #fc00ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: whitesmoke;
+    text-align: left;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.donorBtn {
+    width: 8em;
+    margin: 1em 0.15em;
+}
+
+.patientContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.patientCard {
+    width: 700px;
+    height: 90vh;
+    background-color: transparent;
+    text-align: left;
+    padding: 1em 2em;
+}
+
+.patientTitles {
+    text-decoration: underline;
+    margin: 6px 0px;
+}
+
+.landingContainer {
+    height: 100%;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.firstSegment {
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url("https://cdn.pixabay.com/photo/2019/06/27/11/21/red-blood-cell-4302093__340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.bttn {
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    margin: 10px 0px;
+}
+
+.bttnRow {
+    width: 50vw;
+    display: flex;
+    justify-content: baseline;
+}
+
+.bttnRow,
+button:hover {
+    animation: bttnGlow 0.12s linear forwards;
+}
+
+@keyframes bttnGlow {
+    100% {
+        border: 2px solid whitesmoke;
+        background-color: rgb(158, 45, 45);
+        transform: scale(1.05);
+        font-family: cursive;
+    }
+}
+
+.secondSegment {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgb(161, 7, 7);
+}
+
+.donateBttn {
+    border-radius: 20px;
+    background-color: transparent;
+    width: 8em;
+    color: white;
+    border: 2px solid white;
+}
+
+.donateBttn:hover {
+    animation: borderColor 0.12s linear forwards;
+}
+
+@keyframes borderColor {
+    100% {
+        color: orange;
+        border-color: orange;
+        transform: scale(1.1);
+        background-color: rgb(139, 12, 12);
+    }
+}
+
+.locationContainer {
+    color: white;
+    position: relative;
+    height: 100vh;
+}
+
+.thirdSegment {
+    position: relative;
+    background-color: rgb(161, 7, 7);
+    height: 100vh;
+    width: 100%;
+}
+
+.sponsor {
+    height: 100vh;
+    background: url("data:image/jpeg;base64,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");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .sponsor {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .sponsor::-webkit-scrollbar{
+        display: none;
+    }
+  }
+
+.card:hover {
+    animation: growCard 0.1s linear forwards;
+}
+
+@keyframes growCard {
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.contact {
+    background-color: rgb(23, 24, 85);
+    height: 80vh;
+    padding: 5em 0em;
+    color: rgb(139, 135, 135);
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    #links{
+        display: none;
+    }
+  }
+
+.contact,
+a {
+    text-decoration: none;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(63, 154, 238);
+    color: rgb(63, 154, 238);
+}
+
+.top:hover {
+    animation: topGlow 0.05s linear forwards;
+}
+
+@keyframes topGlow {
+    100% {
+        text-decoration: underline;
+        border: 3px solid rgb(60, 138, 255);
+        color: rgb(60, 138, 255);
+        transform: scale(1.25);
+    }
+}
+
+#filterButton {
+    margin-top: 20px;
+    margin-right:4px;
+}
+
+.countSegment {
+    position: relative;
+    height: 20vw;
+    width: 100%;
+    background-color: rgb(161, 7, 7);
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.countBttn {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+    color: rgb(0, 132, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid silver;
+    font-size: 25px;
+}
+
+.loginRow {
+    background-color: rgb(218, 105, 77);
+    width: 80vw;
+    margin: 5px 0px;
+}
+
+.loginRow:hover {
+    animation: growRow 0.1s linear forwards;
+}
+
+@keyframes growRow {
+    100% {
+        transform: scale(0.99);
+        background-color: rgb(177, 67, 23);
+    }
+}
+
+.registerBttn{
+    margin-left: 5px;
+    margin-right: 4px;
+}
+
+.registerBttn:hover {
+    animation-name: register-btn-hover;
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+}
+
+@keyframes register-btn-hover {
+    100% {
+        transform: scale(1.1);
+        background-color: rgb(114, 163, 219);
+        margin: 0px 10px;
+        border: 2px solid white;
+    }
+}
+
+.inventory-container{
+    padding:30px;
+}
+
+.donor-container{
+    padding:30px;
+}

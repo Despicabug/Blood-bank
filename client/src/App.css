@@ -1,0 +1,9 @@
+.App {
+    text-align: center;
+    position: relative;
+    background: repeating-linear-gradient(to bottom, rgb(126, 1, 1), red, rgb(126, 1, 1), red, rgb(126, 1, 1));
+    /* background: linear-gradient(60deg, rgb(245, 74, 74) 0%, rgb(226, 200, 222) 50%, rgb(245, 74, 74) 100%); */
+    max-width: 100vw;
+    min-height: 110vh;
+    overflow-x: hidden;
+}
